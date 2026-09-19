@@ -1346,11 +1346,23 @@ audio {
   font-family: 'Happy', sans-serif;
   font-size: 60px;
   text-transform: uppercase;
-  color: #C4515C;
+  color: #4a37db;
   text-shadow: 2px 2px 2px #FFF;
   display: none;              /* controlled by JS */
   font-weight: bold;
   margin: 15px 0;             /* spacing between lines */
+}
+
+.message p.credit {
+  font-family: 'Signika', 'Nunito', sans-serif;
+  font-size: 26px;
+  color: #ffffff;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.75);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-top: 25px;
+  font-weight: 700;
+  display: none;
 }
 
 .btn-primary {
