@@ -1346,7 +1346,7 @@ audio {
   font-family: 'Happy', sans-serif;
   font-size: 60px;
   text-transform: uppercase;
-  color: #4a37db;
+  color: #C4515C;
   text-shadow: 2px 2px 2px #FFF;
   display: none;              /* controlled by JS */
   font-weight: bold;
@@ -1356,7 +1356,7 @@ audio {
 .message p.credit {
   font-family: 'Signika', 'Nunito', sans-serif;
   font-size: 26px;
-  color: #ffffff;
+  color: #4a37db;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.75);
   letter-spacing: 4px;
   text-transform: uppercase;
