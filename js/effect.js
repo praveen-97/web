@@ -183,22 +183,22 @@ $('document').ready(function(){
 			$('.message').fadeIn('slow');
 		});
 
-		var $messages = $(".message p");   // only inside .message
+		var $messages = $(".message p:not(.credit)");   // only inside .message, excluding author credit
 		var totalMessages = $messages.length;
-
 		function msgLoop(i) {
 			if (i < totalMessages - 1) {
 				$messages.eq(i).fadeIn('slow').delay(1500).fadeOut('slow').promise().done(function(){
 					msgLoop(i + 1);
 				});
 			} else {
-				// Last message stays + cake comes back
+				// Last message ("A Very Happy 23rd Birthday Harshitha ❤️") stays + cake comes back
 				$messages.eq(i).fadeIn('slow').promise().done(function(){
 					$('.cake').fadeIn('fast');
+					// Show author credit in bottom center right after
+					$('.credit').delay(800).fadeIn('slow');
 				});
 			}
 		}
-
 		msgLoop(0);
 	});
 
